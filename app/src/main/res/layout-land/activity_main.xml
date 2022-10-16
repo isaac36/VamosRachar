@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300sp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="Vamos"
+        android:fontFamily="@font/roboto_black"
+        android:text="Vamos Rachar!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/caixa_valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/caixa_numerodepessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:width="150dp"
+        android:height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Número de pessoas"
+        android:inputType="number"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_valor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_valor"
+        app:layout_constraintTop_toBottomOf="@+id/caixa_valor" />
+
+    <EditText
+        android:id="@+id/caixa_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="150dp"
+        android:height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Valor para dividir"
+        android:inputType="number|numberDecimal"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:numeric="integer|decimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="$"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caixa_valor"
+        app:layout_constraintEnd_toStartOf="@+id/caixa_valor"
+        app:layout_constraintTop_toTopOf="@+id/caixa_valor" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:text="÷"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caixa_numerodepessoas"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/caixa_numerodepessoas"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:width="160dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Coloque os valores"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caixa_valor"
+        app:layout_constraintEnd_toStartOf="@+id/caixa_valor"
+        app:layout_constraintTop_toTopOf="@+id/caixa_valor" />
+
+    <TextView
+        android:id="@+id/caixa_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/caixa_valor" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:contentDescription="Compartilhar"
+        android:fontFamily="@font/roboto_black"
+        android:text="compartilhar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:icon="?attr/actionModeShareDrawable"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/caixa_valor"
+        app:layout_constraintStart_toEndOf="@+id/caixa_valor"
+        app:layout_constraintTop_toTopOf="@+id/caixa_valor" />
+
+    <Button
+        android:id="@+id/botao_TTS"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:contentDescription="Escutar valores e resultado"
+        android:fontFamily="@font/roboto_black"
+        android:text="TTS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:icon="@android:drawable/ic_lock_silent_mode_off"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/botao"
+        app:layout_constraintStart_toStartOf="@+id/botao"
+        app:layout_constraintTop_toBottomOf="@+id/caixa_valor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
