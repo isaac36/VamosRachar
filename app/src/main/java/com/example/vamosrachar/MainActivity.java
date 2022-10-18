@@ -158,14 +158,14 @@ public class MainActivity extends AppCompatActivity {
                             if(num2!=0) {
                                 num3 = num1 / num2;
                                 if((numerodepessoas.getText().length() > 0)&(valor.getText().length() > 0)){
-                                textView4.setText("Resultado:");
+                                textView4.setText(getString(R.string.Resultado));
                                 resultado.setText(df.format(num3)+" R$");}
                             }
 
 
 
                         }else{
-                            textView4.setText("Coloque os valores");
+                            textView4.setText(R.string.Coloque_os_valores);
                             resultado.setText("");
                         }
                     }

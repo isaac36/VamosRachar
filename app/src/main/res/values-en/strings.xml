@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lets Rachar!</string>
+    <string name="Vamos">Lets</string>
+    <string name="Rachar">Rachar!</string>
+    <string name="Coloque_os_valores">Put the values</string>
+    <string name="Resultado">Result:</string>
+    <string name="Compartilhar">Share</string>
+    <string name="Escutar">Hear</string>
+    <string name="Número_de_pessoas">People number</string>
+    <string name="Valor_para_dividir">Value to divide</string>
+</resources>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">VamosRachar</string>
+    <string name="app_name">Vamos Rachar!</string>
+    <string name="Vamos">Vamos</string>
+    <string name="Rachar">Rachar!</string>
+    <string name="Coloque_os_valores">Coloque os valores</string>
+    <string name="Resultado">Resultado:</string>
+    <string name="Compartilhar">Compartilhar</string>
+    <string name="Escutar">Escutar</string>
+    <string name="Número_de_pessoas">Número de pessoas</string>
+    <string name="Valor_para_dividir">Valor para dividir</string>
 </resources>
